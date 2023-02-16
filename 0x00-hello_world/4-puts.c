@@ -4,7 +4,7 @@
  
  * main - A program that prints a line with puts
  
- *Return:0 (success)
+ *Return: 0 (success)
 
 **/
 
