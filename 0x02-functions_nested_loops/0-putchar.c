@@ -1,5 +1,5 @@
 #include <unistd.h>
-#include "putchar.h"
+#include "_putchar.h"
 /**
  * main - Main
  *
@@ -13,8 +13,8 @@ int main(void)
 
 	for (i = 0; pc[i] != '\0'; i++)
 	{
-		putchar(pc[i]);
+		_putchar(pc[i]);
 	}
-	putchar('\n');
+	_putchar('\n');
 	return (0);
 }
