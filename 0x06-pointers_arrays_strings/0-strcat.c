@@ -1,37 +1,27 @@
 #include "main.h"
-#include <stdio.h>
-
-/*
- *i _stncat - check code
- *
- * Return: ALways 0.
- */
-
-char *_strncat(char *dest, char *src, int n)
+/**
+* _strcat - concatenates two strings
+* @dest: input value
+* @src: input value
+*
+* Return: void
+*/
+char *_strcat(char *dest, char *src)
 {
-
-  char *cPtr = dest;
-  int SIZE_1 = 0;
-  for (; *cPtr++ != '\0';)
-    SIZE_1++;
-
-  int SIZE = SIZE_1 + n;
-  char resArr[SIZE];
-  char *ptr = resArr;
-
-  int i;
-  for (i = 0; *dest != '\0'; i++)
-
-  {
-    resArr[i] = *dest++;
-  }
-
-  int j = 0;
-  for (; j < n && *src != '\0'; j++)
-  {
-    resArr[i++] = *src++;
-  }
-
-  return (ptr);
-
+int i;
+int j;
+i = 0;
+while (dest[i] != '\0')
+{
+i++;
+}
+j = 0;
+while (src[j] != '\0')
+{
+dest[i] = src[j];
+i++;
+j++;
+}
+dest[i] = '\0';
+return (dest);
 }
